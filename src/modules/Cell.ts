@@ -63,6 +63,11 @@ export class Cell {
     }
     return true;
   }
+  // isUnderAtack(target: Cell) {
+  //   console.log(this.y);
+  //   console.log(this.x);
+  //   console.log(target.x);
+  // }
   isEmptyDiagonal(target: Cell): boolean {
     const absX = Math.abs(target.x - this.x);
     const absY = Math.abs(target.y - this.y);

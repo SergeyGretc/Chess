@@ -44,20 +44,21 @@ const BoardComponent: FC<BoardProps> = ({ board, setBoard, currentPlayer, swapPl
 
     return (
         <>
-            <h3>Текущий игрок {currentPlayer?.color}</h3>
-            <div className="board" >
+            <div><h3>Текущий игрок {currentPlayer?.color}</h3>
+                <div className="board" >
 
-                {board.cells.map((row, index) =>
+                    {board.cells.map((row, index) =>
 
-                    <React.Fragment key={index}>
+                        <React.Fragment key={index}>
 
-                        {row.map((cell) =>
-                            <CellComponent click={click} cell={cell} key={cell.id} selected={cell.x === selectedCell?.x && cell.y === selectedCell?.y} />
-                        )}
-                    </React.Fragment >
+                            {row.map((cell) =>
+                                <CellComponent click={click} cell={cell} key={cell.id} selected={cell.x === selectedCell?.x && cell.y === selectedCell?.y} />
+                            )}
+                        </React.Fragment >
 
-                )}
-            </div>
+                    )}
+                </div></div>
+
         </>
     )
 }

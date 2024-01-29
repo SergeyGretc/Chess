@@ -15,7 +15,8 @@
   width:calc(64px * 8);
   height:calc(64px * 8);
   display:flex;
-  flex-wrap:wrap
+  flex-wrap:wrap;
+ 
 }
 
 .cell {
@@ -53,4 +54,7 @@ background-color: rgb(54, 54, 54);
   padding:30px;
   margin-left:50px;
   background-color: lightgray;
+}
+.timer {
+  margin-right:50px;
 }
